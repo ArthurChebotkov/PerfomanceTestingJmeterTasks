@@ -8,8 +8,8 @@ Jmeter scenario test file
 This csv file used for writing new players e-mails (transaction Register a new player) and reading it (transaction GetOnePlayer)  
 4. **user.properties**  
 This properties used for Generate html report  
-5. **start.cmd**
-This command create a results folder and run test
+5. **start.cmd**  
+This command create a results folder and run test 
   
 ## Test describe  
 This test include next transactions:  
