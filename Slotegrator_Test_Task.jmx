@@ -330,13 +330,13 @@ ${__setProperty(EMAIL,${EMAIL})}</stringProp>
               <stringProp name="filename"></stringProp>
               <stringProp name="parameters"></stringProp>
               <boolProp name="resetInterpreter">false</boolProp>
-              <stringProp name="script">import org.apache.jmeter.services.FileServer; 
+              <stringProp name="script">import org.apache.jmeter.services.FileServer;
 
-//get path of current jmeter&apos;s script 
-String testPlanDirectory = FileServer.getFileServer().getBaseDir();  
-
-//get the separator 
-//String separator = File.separator; 
+//get path of current jmeter&apos;s script
+String testPlanDirectory = FileServer.getFileServer().getBaseDir();
+ 
+//get the separator
+//String separator = File.separator;
 
 String pathToEmails = vars.get(&quot;PATHEMAILS&quot;);
 
@@ -353,10 +353,7 @@ PrintStream printStream = new PrintStream(fileOutputStream);
 printStream.println(email);
 
 printStream.close();
-fileOutputStream.close();
-
-
-</stringProp>
+fileOutputStream.close();</stringProp>
             </BeanShellPostProcessor>
             <hashTree/>
             <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
@@ -977,16 +974,16 @@ vars.put(&quot;PARAM&quot;, paramValue);</stringProp>
               <boolProp name="resetInterpreter">false</boolProp>
               <stringProp name="parameters"></stringProp>
               <stringProp name="filename"></stringProp>
-              <stringProp name="script">import java.io.File;
+              <stringProp name="script">//import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import org.apache.jmeter.services.FileServer; 
+import org.apache.jmeter.services.FileServer;
 
-//get path of current jmeter&apos;s script 
-String testPlanDirectory = FileServer.getFileServer().getBaseDir(); 
-
-//get the separator 
-//String separator = File.separator; 
+//get path of current jmeter&apos;s script
+String testPlanDirectory = FileServer.getFileServer().getBaseDir();
+ 
+//get the separator
+//String separator = File.separator;
 
 String pathToEmails = vars.get(&quot;PATHEMAILS&quot;);
 
