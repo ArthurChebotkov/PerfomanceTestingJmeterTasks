@@ -1,5 +1,5 @@
-## Structure of repository (include test results)  
-1. **test_results folder**  
+## Structure of repository (include my test results)  
+1. **my_test_results folder**  
 Include summary.csv file and result folder with html report  
 Open result/index.html file to see test results 
 2. **Slotegrator_Test_Task.jmx**  
@@ -25,11 +25,12 @@ This transaction delete all players and clear email_addresses.csv file for next 
   
 ## How to run it  
 1. **Clone the repository**  
-2. **Open "Slotegrator_Test_Task.jmx"** using Jmeter and click on the Run/Start  
-3. After 15 minutes you will be able to **find summary.csv file** in user root folder (for example: user/summary.csv)  
-4. You can **generate html report** click on the Tools/Generate HTML report and using summary.csv and user.properties in this repository.  
+2. **Add *jmeter_folder*/bin to PATH**
+3. **Click on start.cmd**
+4. After 15 minutes you will be able to **find summary.csv file** and **generate html report** in /report folder
   
 ## After test  
+1. **Open "Slotegrator_Test_Task.jmx"** using Jmeter GUI
 1. **Enable DeleteAllPlayers transaction**  
 2. Click right mouse button on DeleteAllPlayers and **click Start**  
 3. All **players will be deleted** and **email_addresses.csv will be cleared**  
